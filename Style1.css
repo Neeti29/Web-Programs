@@ -1,0 +1,14 @@
+
+H2
+{
+	color:limegreen;
+	font-family:"Arial";
+	font-size:normal;
+}
+
+.warning
+{
+	color:red;
+	font-weight:bold;
+	font-style:italic;
+}

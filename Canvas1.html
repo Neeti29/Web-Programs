@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #7FFF00;">
+</canvas>
+
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+<!--Drawing a coloured line-->
+ctx.moveTo(0,0);
+ctx.lineTo(500,200);
+ctx.lineWidth=10;
+ctx.strokeStyle= '#0000ff';
+ctx.stroke();
+
+
+<!--Rectangle-->
+ctx.fillStyle="#FF0000";
+ctx.strokeRect(0,0,200,200);  
+ctx.fillRect(0,0,200,200);
+
+<!--Arc-->
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+
+<!--Text-->
+ctx.font="30px Arial";
+ctx.fillStyle='blue';
+ctx.fillText("Hello World" ,10,50);
+</script>
+</body>
+</html>

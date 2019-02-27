@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Scale Demo here</title>
+
+<style>
+
+.square
+{
+	width:100px;
+	height:100px;
+	backgound-color:yellow;
+	color:blue;
+	border:5px solid black;
+	margin:100px;
+	transition:transform 1s;
+}
+
+ .square:hover{transform:scale(2);}
+
+.droplet
+{ 
+	width:100px;
+	height:100px;
+	background-color:mediumaquamarine;
+	border-radius:2% 50%;
+	margin:100px;
+	transistion:all 3s;
+	transition-timing:ease-in-out;
+}
+ 
+ .droplet:hover{tranform:skew(30deg,180deg);}
+
+</style>
+</head>
+<body>
+	<h1>The Scale() Method</h1>
+	<div class ="square"></div>
+	<div class="droplet"></div>
+</body>
+</html>
