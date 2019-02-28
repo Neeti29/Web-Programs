@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+
+body
+{
+	 background-image:url("file:///D:/Neeti/Java/HTMLDemo/images/bg2.jpg");
+	 margin:0;
+	 background-size:cover;
+	 
+}
+#header
+{
+	
+	color:black;
+	text-align:center;
+	padding:5px;
+	
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#DCDCDC;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:    grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: black;
+  color: black;
+}
+
+#section
+{
+	width:300px;
+	height:700px;
+	padding:10px;
+	align: center;
+ 	color:black;
+	border:solid black ;
+	background-image:url("back1.png");
+	
+	
+	
+}
+
+#ASIDE
+{
+	float:left;
+	
+	
+}
+
+span{ color:red}
+
+#footer
+{
+	
+	color:black;
+	clear:both;
+	text-align:center;
+	padding:5px;
+	
+}
+input 
+{
+ width:100%;
+ height:75%;
+ padding:12px 20px;
+ margin:4px 0;
+ box-sizing:border-box;
+ border:1px solid #5D6D7E;
+ border-radius:9px;
+}
+.formclass
+{
+	margin:0 auto;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>Welcome to NIIT Technologies Limited</h1>
+</div>
+<br>
+<div class="topnav">
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Login</a>
+  <a href="#">SignUp</a>
+</div>
+<br>
+
+<div id="section" class="formclass">
+<form action="/action_page.php" align="center">
+
+  <lable1 for="register">Register here</lable1><br>
+  <label for="fname">First Name</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  
+  <label for="lname">Last Name</label><br>
+  <input type="text" id="lanme" name="lname" ><br>
+  
+  
+  <label for="mobileno">Mobile No.</label><br>
+  <input type="tel" name="usrtel"><br>
+ 
+  <label for="email">Email-Id</label><br>
+  <input type="email" name="emailaddress"><br>
+  
+  <label for="pass">Password</label><br>
+  <input type="password" name="pwd"><br>
+  
+  <label for="confpass">Confirm Password</label><br>
+  <input type="password" name="pwd"><br>
+  
+  
+  <label for="city">City</label><br>
+  <input list="State">
+  <datalist id="State">
+    <option value="Delhi">
+    <option value="Chandigarh">
+    <option value="Gujrat">
+    <option value="Jaipur">
+    <option value="HimachalPradesh">
+  </datalist><br>
+  
+  <label for="add">Address</label><br>
+  <textarea name="Address" rows="10" cols="30" style="width:200px; height:100px;">
+  </textarea>
+  
+  <input type="submit" value="Submit" >
+
+  
+ </form>
+ </div>
+<br>
+<div id="footer">
+Copyright @ niittechnologies.com
+</div>
+
+</body>
+</html>
