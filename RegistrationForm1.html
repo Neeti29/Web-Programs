@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+body
+{
+	 background-image:url("bg-3.jpg");
+	 margin:0;
+	 background-size:cover;
+	 
+}
+#header
+{
+	
+	color:#FF7A00;
+	text-align:center;
+	padding:0px;
+	
+}
+.heading
+{
+	color:#FF7A00;
+}
+/*.topnav {
+  overflow: hidden;
+  background-color:#E0E0E0;
+  padding:8px;
+  
+}*/
+/* Style the topnav links */
+/*.topnav a {
+  float: right;
+  display: block;
+  color: #040404;
+  text-align: center;
+  padding:5px;
+  text-decoration: none;
+}*/
+/* Change color on hover */
+/*.topnav a:hover {
+  background-color: white;
+  color: #FF6700;
+}*/
+#section
+{
+	width:500px;
+	height:515px;
+	padding:10px;
+	<!--align: center;-->
+	position: absolute;
+    left: 150px;
+ 	color:black;
+	border:solid white ;
+	background-image:url("bg-8.jpg");
+	
+	
+	
+	
+}
+#ASIDE
+{
+	float:left;
+	
+	
+}
+span{ color:red}
+#footer
+{
+	background-color:#E0E0E0;
+	color:black;
+	clear:both;
+	text-align:center;
+	padding:1px,1px;
+	height:20px;
+	
+	
+}
+input 
+{
+ width:80%;
+ height:50%;
+ padding:3px 7px;
+ margin:4px 0;
+ box-sizing:border-box;
+ border:1px solid #5D6D7E;
+ border-radius:9px;
+}
+.formclass
+{
+	margin:0 auto;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+.button
+{	
+
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>Welcome to NIIT Technologies</h1>
+</div>
+<!--
+<div class="topnav">
+  <a href="#"><b>Login</b></a>
+  <a href="#"><b>Sign Up</b></a>
+  <a href="#"><b>About Us</b></a>
+  <a href="#"><b>Contact Us</b></a>
+</div>
+<br>-->
+
+<div id="section" class="formclass">
+<form action="/action_page.php" align="center">
+
+ <div class="heading"><h4><b>REGISTER HERE</b></h4></div> 
+ 
+ <div class="heading" > <label for="fname">First Name</label></div>
+ <input type="text" id="fname" placeholder="Enter First Name"  name="fname" required><br> 
+ 
+ <div class="heading" > <label for="lname">Last Name</label></div>
+  <input type="text" id="lanme"  placeholder="Enter Last Name" name="lname" required>
+  
+  
+  
+ <div class="heading" > <label for="mobileno">Mobile No.</label><br></div>
+  <input type="tel" name="usrtel" placeholder="91+8878491012" required ><br>
+ 
+  <div class="heading" ><label for="email">Email-Id</label><br></div>
+  <input type="email" name="emailaddress" placeholder="abc@gmail.com" required> <br>
+  
+  <div class="heading" > <label for="pass">Password</label><br></div>
+  <input type="password" name="pwd" required><br>
+  
+  <div class="heading" > <label for="confpass">Confirm Password</label><br></div>
+  <input type="password" name="pwd" required><br>
+  
+  
+  <div class="heading" > <label for="State" placeholder="Delhi" reuqired>City</label><br></div>
+  <input list="State">
+  <datalist id="State">
+    <option value="Delhi">
+    <option value="Punjab">
+    <option value="Gujrat">
+    <option value="Kerala">
+    <option value="Rajasthan">
+  </datalist><br>
+  
+  <div class="heading" > <label for="add">Address</label><br></div>
+  <textarea name="Address" rows="5" cols="10" style="width:270px; height:50px;">
+  </textarea>
+ 
+   
+  <br>
+  
+  <input type="submit" class="registerbtn" value="Register" >
+  
+  
+
+  
+ </form>
+ </div><br>
+<div id="footer">
+Copyright @ niittechnologies.com
+</div><br>
+
+</body>
+</html>
