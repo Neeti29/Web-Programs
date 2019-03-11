@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+body
+{
+	font-family:Helvetica;
+	text-align:center;
+}
+#birthday-greeting
+{
+	font-size:72px;
+	color:teal;
+	text;transform:uppercase;
+}

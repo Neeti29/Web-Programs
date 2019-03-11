@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function func1()
+{
+	var a;        //XHR object
+	
+	if (window.XMLHttpRequest)
+		{
+		//if the browser if IE7 +[or]Firefox[or]Chrome[or]Safari
+		a=new XMLHttpRequest();
+		}
+	else{
+		//if the browser is IE6, IE5
+		a= new ActiveXObject("Microsoft.XMLHTTP");
+	}
+a.open("POST","ajax1.txt",true);
+a.send();
+	
+a.onreadystatechange=function()
+	{
+		if(a.readyState==4 && a.status==200)
+			{
+			document.getElementById("myDiv").innerHTML=a.responseText;
+			documnet.getElementById("textArea").value=a.responeText;
+			}
+	}
+	}
+</script>
+</head>
+<body>
+<h1>My First Ajax Page</h1>
+<div id="myDiv" style="width: 300px; height: 30px;">click on the button below </div>
+<textarea id="textArea" cols="40" rows="5"></textarea>
+<br>
+<br>
+<button type="button" onclick="func1()">change content </button>
+</body>
+</html>

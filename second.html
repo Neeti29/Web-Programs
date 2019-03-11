@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Read Html file in ajax</title>
+
+<script>
+var myRequest = new XMLHttpRequest();
+myRequest.open("GET", "third.html",true);
+myRequest.onreadystatechange = function() {
+	
+	if (myRequest.readyState === 4) {
+		document.getElementById("ajax-content").innerHTML = myRequest.responeText;
+	}
+}
+
+function sentTheAJAX() {
+	myRequest.send();
+	document.getByElementId('reveal').style.display = 'none';
+}
+
+</script>
+</head>
+<body>
+<h1>Todays your special day !</h1>
+<button id="reveal" onclick="sendTheAJAX()" class="button">why's that</button>
+<div id="ajax-content">
+</div>
+
+</body>
+</html>
